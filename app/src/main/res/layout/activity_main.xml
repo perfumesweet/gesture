@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gestureList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <Button
+                style="?android:attr/buttonCornerRadius"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_weight="1"
+                android:onClick="addGesture"
+                android:text="@string/addGesture"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="NewApi" />
+
+            <Button
+                style="?android:attr/buttonCornerRadius"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_weight="1"
+                android:onClick="verifyGesture"
+                android:text="@string/verifyGesture"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="NewApi" />
+
+            <Button
+                style="?android:attr/buttonCornerRadius"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_weight="1"
+                android:onClick="setting"
+                android:text="@string/gestureSetting"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="NewApi" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
